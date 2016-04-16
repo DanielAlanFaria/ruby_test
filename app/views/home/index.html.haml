@@ -1,0 +1,25 @@
+.container.down
+	.row
+		.col-md-12
+			.thumbnail
+				.container.down
+					.row
+						= simple_form_for :filtro, :url => models_path, :html => { :method => :get } do |form|
+							.col-md-6
+								= form.input :webmotors_make_id, label: "Fabricante", required: false, collection: make_collection 
+					.row.down
+						.col-md-12
+							%button.btn.btn-default Buscar modelos
+					%br
+
+#container_erro{style: "display:none;"}
+	.container
+		.row
+			.col-md-12
+				%tr
+					%td
+						.alert.alert-danger{:role => "alert"}
+							%span.sr-only Error:
+							Não foi possível completar a operação
+
+#container

@@ -1,0 +1,13 @@
+.container.down
+  .row
+    .col-md-12
+      .thumbnail
+        - if @models.present?
+          %table.table.table-striped{:cellspacing => "0"}
+            %thead
+              %tr
+                %th.al_center Nome
+            %tbody
+              - @models.each do |item|
+                %tr{:class => cycle("", "alt") }
+                  %td= item.name
