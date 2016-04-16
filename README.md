@@ -4,7 +4,7 @@
 
 Consultar marcas e modelos de carros usando a API do WebMotors.
 
-## Objetivo
+## Instruções
 
 1. Clonar o repositorio
 2. Instalar as GEM's (executando o comando bundle dentro da pasta do projeto)
